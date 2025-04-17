@@ -1,0 +1,50 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+
+{% comment %} Messagem avisando {% endcomment %}
+
+
+
+<div class='conteine-registro'>
+    <div class='registro-title'>
+        <h1>Cadastro Resistrado</h1>
+    </div>
+    
+<header class='registro-menu' >
+    <div class='registro-content' >
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Numero</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cadastro in registro %}
+                <tr>
+                    <td>
+                        {{ cadastro.nome_morado }}
+                    </td>
+                    <td>
+                        {{ cadastro.numero_apt }}
+                    </td>
+                </tr>
+                {% endfor %}
+                {% comment %} <tr>
+                    <td>Socorro França</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>600</td>
+                </tr> {% endcomment %}
+            </tbody>
+        </table>
+    </div>
+</header>
+</div>
+
+{% endblock content %} 
+

@@ -1,0 +1,36 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+
+<section>
+    <form method="POST" 
+    action=" {{ form_action }} "
+    enctype="multipart/form-data" 
+    class="content"
+    >
+    {% csrf_token %}
+    <h1>Cadastra Entregas</h1>
+    
+    <header class="cadastro">
+    {% for field in form %}
+
+    {% if field.help_text %}
+        <p >{{ field.help_text }}</p>
+    {% endif %}  
+    {{ field}} 
+
+    
+
+    {% endfor %}
+
+    </header> 
+
+    <div>
+        <button type="submit">Enviar</button>
+
+    </div>
+
+    </form>
+</section>
+
+{% endblock content %}

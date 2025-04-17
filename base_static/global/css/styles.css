@@ -1,0 +1,108 @@
+* {
+    padding: 0.1rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    color: darkblue;
+}
+h1 {
+    font-size: 3rem;
+    padding-bottom: 0.7rem;
+}
+input {
+    font-size: 1.5rem;
+    padding: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 47, 255, 0.5);
+    border-radius: 1rem;
+}
+input:focus {
+    border-color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    outline: none;
+    border-radius: 0;
+    box-shadow: 0 4px 18px rgba(85, 85, 85, 0.9);
+}
+button {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    background: rgb(181, 240, 181);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 0.6rem;
+}
+button:hover {
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    
+}
+.menu-content{
+    font-family: Arial, sans-serif;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.principal a {
+    text-decoration: none;
+    font-size: 1.9rem ;
+    border: 0.02rem solid rgb(3, 145, 201);
+    padding: 0.6rem;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+a:hover {
+    font-size: 2.05rem;
+    color: black;
+}
+
+.conteine-registro{
+    margin-top: 2rem;
+}
+.registro-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registro-menu {
+    display: flex;
+    
+}
+.registro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+table {
+    border: 0.05rem solid red;
+    padding: 2rem;
+}
+td{
+    padding: 2rem;
+}
+tr:hover {
+    font-size: 3.02rem;
+    background-color: rgba(115, 148, 255, 0.2);
+    
+}
+.cadastro {
+    padding: 2rem;
+}

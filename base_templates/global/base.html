@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'global/css/styles.css' %} ">
+    <title>Livros</title>
+</head>
+
+<body>
+    <div class="principal">
+        
+        <h1>SISTEMA DE CADASTROS</h1>
+
+        <div class='menu'>
+            <div class='menu-content'>
+                <a href=" {% url 'contact:cadastros' %} ">Cadastra Entregas</a>
+                <a href=" {% url 'contact:visualizacao' %} ">Visualiza Entregas</a>
+            </div>
+        </div>
+        {% include "global/messagem.html" %}
+        {% block content %}{% endblock content %}
+    </div>
+
+</body>
+
+</html>
