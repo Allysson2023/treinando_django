@@ -1,17 +1,20 @@
 * {
     padding: 0.1rem;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: aqua;
     color: darkblue;
+    top: 0;
 }
 .sistema-main{
     font-size: 1.5rem;
     padding: 0.5rem;
-
+    
 }
 /* h1 {
     padding-bottom: 0.7rem;
@@ -21,6 +24,7 @@ input {
     padding: 0.9rem;
     box-shadow: 0 4px 8px rgba(0, 47, 255, 0.5);
     border-radius: 1rem;
+    width: 100%;
 }
 input:focus {
     border-color: rgb(255, 255, 255);
@@ -54,37 +58,49 @@ button:hover {
     
 }
 .menu-content{
-    font-family: Arial, sans-serif;
+    font-family: serif;
     margin-top: 2rem;
     font-size: 1.05rem;
     margin-bottom: 2rem;
+}
+.menu-content a {
+    color: crimson;
+}
+.menu-content a:hover {
+    font-size: 2rem;
+    color: black;
+    
 }
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    border: 0.1rem solid crimson;
+    padding-bottom: 1rem;
+}
+.content-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
 }
 .principal {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 2rem;
 }
 .principal a {
     text-decoration: none;
     font-size: 1.9rem ;
-    border: 0.02rem solid rgb(3, 145, 201);
+    
     padding: 0.6rem;
     justify-content: space-between;
     text-transform: uppercase;
 }
-a:hover {
-    font-size: 2rem;
-    color: black;
-    
-}
+
 
 /* .conteine-registro{
     
@@ -137,4 +153,55 @@ tr:hover {
 
     font-size: 2rem;
     padding: 1rem;
+}
+
+.menu-1 {
+    background: rgb(0, 0, 0);
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+}
+.menu-2 {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.logo-marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(255, 0, 0);
+    border-radius: 3rem;
+}
+.logo-marca:hover {
+    
+    background: rgb(38, 0, 255);
+}
+.logo-marca a:hover{
+    color: white;
+}
+.menu-ul {
+    display: flex;
+    align-items: center;
+    font-family:  'Times New Roman', Times, serif;
+}
+
+.menu-ul ul li{
+    padding: 1rem;
+    color: white;
+    border-bottom: 0.1rem solid red;
+    font-size: 1rem;
+}
+.menu-ul ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-ul ul li:hover {
+    color: red;
+    border-bottom: 0.1rem solid white;
+    font-size: 1.5rem;
 }

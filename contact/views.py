@@ -17,6 +17,7 @@ def cadastros(request):
         context = {
             'form': form_cadastro,
             'form_action': form_action,
+            
         }
 
         if form_cadastro.is_valid():
@@ -32,6 +33,7 @@ def cadastros(request):
     context = {
             'form': CadastroForm(),
             'form_action': form_action,
+            'title': ' Cadastra '
         }
 
     return render (

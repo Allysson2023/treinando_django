@@ -12,14 +12,7 @@ class CadastroForm(forms.ModelForm):
         ),
         help_text='Numero do apartamento',
     )
-    motivos = forms.CharField(
-        widget=forms.TimeInput(
-            attrs={
-                'placeholder':'Digite o numero',
-            }
-        ),
-        help_text='Numero do apartamento',
-    )
+
     nome_morado = forms.CharField(
         widget=forms.TimeInput(
             attrs={
@@ -28,11 +21,19 @@ class CadastroForm(forms.ModelForm):
         ),
         help_text='Nome do Proprietario',
     )
+    tipo_entrega = forms.CharField(
+        widget=forms.TimeInput(
+            attrs={
+                'placeholder':'Digite o Tipo da Entrega',
+            }
+        ),
+        help_text='Tipo da Entrega',
+    )
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
     
     class Meta:
         model = models.Cadastros
         fields = (
-            'numero_apt', 'nome_morado'
+            'numero_apt', 'nome_morado', 'tipo_entrega'
         )
