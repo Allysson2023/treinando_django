@@ -12,6 +12,14 @@ class CadastroForm(forms.ModelForm):
         ),
         help_text='Numero do apartamento',
     )
+    motivos = forms.CharField(
+        widget=forms.TimeInput(
+            attrs={
+                'placeholder':'Digite o numero',
+            }
+        ),
+        help_text='Numero do apartamento',
+    )
     nome_morado = forms.CharField(
         widget=forms.TimeInput(
             attrs={

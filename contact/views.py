@@ -46,6 +46,7 @@ def visualizacao(request):
 
     context = {
         'registro': registro,
+        'title': '  Visualizaçao '
     }
 
     return render(

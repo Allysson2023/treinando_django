@@ -8,10 +8,14 @@ body {
     background-color: aqua;
     color: darkblue;
 }
-h1 {
-    font-size: 3rem;
-    padding-bottom: 0.7rem;
+.sistema-main{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
 }
+/* h1 {
+    padding-bottom: 0.7rem;
+} */
 input {
     font-size: 1.5rem;
     padding: 0.9rem;
@@ -33,11 +37,17 @@ button {
     padding: 0.5rem;
     border-radius: 1rem;
     margin-top: 0.6rem;
+    width: 10rem;
 }
 button:hover {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    background: rgb(41, 255, 41);
 }
-
+.p-help {
+    color: rgb(0, 136, 255);
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
 .menu{
     display: flex;
     flex-direction: row;
@@ -46,8 +56,10 @@ button:hover {
 .menu-content{
     font-family: Arial, sans-serif;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -58,7 +70,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+
 }
 .principal a {
     text-decoration: none;
@@ -69,13 +81,14 @@ button:hover {
     text-transform: uppercase;
 }
 a:hover {
-    font-size: 2.05rem;
+    font-size: 2rem;
     color: black;
+    
 }
 
-.conteine-registro{
-    margin-top: 2rem;
-}
+/* .conteine-registro{
+    
+} */
 .registro-title {
     display: flex;
     align-items: center;
@@ -90,19 +103,38 @@ a:hover {
     flex-direction: column;
     align-items: center;
     font-size: 3rem;
+
 }
 table {
     border: 0.05rem solid red;
+    border-radius: 1rem;
     padding: 2rem;
+    width: 50rem;
+    font-size: 2rem;
+
 }
+
 td{
     padding: 2rem;
+    
 }
+
 tr:hover {
-    font-size: 3.02rem;
-    background-color: rgba(115, 148, 255, 0.2);
+    font-size: 2.02rem;
+    background-color: rgba(135, 161, 248, 0.2);
     
 }
 .cadastro {
     padding: 2rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message{
+    background: rgb(67, 255, 67);
+
+    font-size: 2rem;
+    padding: 1rem;
 }

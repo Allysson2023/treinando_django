@@ -17,29 +17,22 @@
             
             <thead>
                 <tr>
-                    <th>Nome</th>
                     <th>Numero</th>
+                    <th>Nome</th>
                 </tr>
             </thead>
             <tbody>
                 {% for cadastro in registro %}
                 <tr>
                     <td>
-                        {{ cadastro.nome_morado }}
+                        {{ cadastro.numero_apt }}
                     </td>
                     <td>
-                        {{ cadastro.numero_apt }}
+                        {{ cadastro.nome_morado }}
                     </td>
                 </tr>
                 {% endfor %}
-                {% comment %} <tr>
-                    <td>Socorro França</td>
-                    <td>1500</td>
-                </tr>
-                <tr>
-                    <td>Gustavo</td>
-                    <td>600</td>
-                </tr> {% endcomment %}
+
             </tbody>
         </table>
     </div>

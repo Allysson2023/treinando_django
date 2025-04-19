@@ -1,5 +1,6 @@
 {% if messages %}
     {% for message in messages %}
+        {% comment %} <div class="message {{ message.tags}} "> {% endcomment %}
         <div class="message {{ message.tags}} ">
             {{ message }}
         </div>
